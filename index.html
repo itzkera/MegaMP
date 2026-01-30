@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETURN TO THE FUTURE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-text">MEGA</span>
+        </div>
+        <div class="nav-links">
+            <a href="https://discord.gg/8UGVnBPJDM" target="_blank" class="discord-btn">Discord</a>
+        </div>
+    </nav>
+
+
+    <div class="background-overlay"></div>
+    
+    <!-- Écran de chargement -->
+    <div id="loading-screen">
+        <div class="mega-logo" id="first-logo">MEGA</div>
+        <div class="mega-logo second-logo" id="second-logo" style="display: none;">MEGA</div>
+    </div>
+    
+    <!-- Conteneur principal pour les sections -->
+    <div id="content-container">
+        <!-- Section principale (visible par défaut) -->
+        <section id="main" class="content-section active">
+            <div class="hero">
+                <h1>Download Project <span>Mega</span></h1>
+                <p>Experience the futuristic chaos of Chapter 4 Season 2.</p>
+                <div class="buttons">
+                    <button class="btn download-btn" onclick="redirectToDiscord()"><i class="fas fa-download"></i> Download Launcher</button>
+                    <button class="btn install-btn" onclick="downloadBuild()"><i class="fas fa-download"></i> Install the build</button>
+                </div>
+                <p class="compatibility">Compatible Windows 10/11 - v24.20 Stable</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
